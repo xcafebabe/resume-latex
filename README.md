@@ -25,10 +25,6 @@ To generate the PDF of your resume using Docker, follow these steps:
 
 5. The generated PDF will be in the current directory, named `resume.pdf`.
 
-## Project Structure
-
-// ... (add information about the project's file structure here)
-
 ## Customization
 
 - Based on: https://github.com/cystema/PlushCV/
