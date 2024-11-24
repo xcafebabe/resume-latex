@@ -148,7 +148,15 @@
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = \pathmainfont,UprightFeatures={SizeFeatures={Size=\mainfontsize}}
   ]{\mainsansfont}
 
-% Date command
+% Additionalinfo command
+\newcommand{\additionalinfo}{
+\begin{textblock}{60}(145,260)
+\raggedleft
+\color{date}\fontspec[Path = \pathmainfont]{\mainfont}\fontsize{8pt}{10pt}\selectfont 
+Further experience available upon request.
+\end{textblock}}
+
+  % Date command
 \usepackage[absolute]{textpos}
 \usepackage[UKenglish]{isodate}
 \setlength{\TPHorizModule}{1mm}
@@ -156,7 +164,7 @@
 \newcommand{\lastupdated}{\begin{textblock}{60}(145,265)
 \raggedleft
 \color{date}\fontspec[Path = \pathmainfont]{\mainfont}\fontsize{8pt}{10pt}\selectfont 
-Last Updated on \today
+Updated: \today
 \end{textblock}}
 
 % Name command
